@@ -1,13 +1,33 @@
 package calculation;
 
-public class EulerCalc implements Calculation {
+import java.io.Serializable;
 
-	// Used to save the result for the e
+/**
+ * 
+ * @author Philip Vonderlind
+ * @version 12.5.2016
+ * 
+ * Calculates e with the sum algorithm and
+ * returns it with a method.
+ * Implements the Calculation interface.
+ *
+ */
+public class EulerCalc implements Calculation, Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4358022024926403716L;
+	/**
+	 * The result of the calculation, Contains e
+	 */
 	private static double result;
 
+	/**
+	 * Call the calculation of e with 100 digits
+	 */
 	@Override
 	public void calculate() {
-		System.out.println("Calculating ...");
 		calcEuler(100);
 	}
 	
@@ -18,7 +38,7 @@ public class EulerCalc implements Calculation {
 	 * @author Philip Vonderlind
 	 * 
 	 * @param digits
-	 * The amount of digits you want e
+	 * The amouSnt of digits you want e
 	 * to have
 	 */
 	private void calcEuler(int digits){
@@ -52,9 +72,12 @@ public class EulerCalc implements Calculation {
 		result = buffer;
 	}
 	
+	/**
+	 * Returns the result of the calculation
+	 */
 	@Override
-	public void getResult() {
-		System.out.println("e equals "+result);
-
+	public double getResult() {
+		
+		return result;
 	}
 }
