@@ -1,0 +1,20 @@
+%!TEX root=../document.tex
+
+\section{Einführung}
+
+Verteilte Objekte haben bestimmte Grunderfordernisse, die mittels implementierten Middlewares leicht verwendet werden können. Das Verständnis hinter diesen Mechanismen ist aber notwendig, um funktionale Anforderungen entsprechend sicher und stabil implementieren zu können.
+
+\subsection{Ziele}
+
+Diese Übung gibt eine einfache Einführung in die Verwendung von verteilten Objekten mittels Java RMI. Es wird speziell Augenmerk auf die Referenzverwaltung sowie Serialisierung von Objekten gelegt. Es soll dabei eine einfache verteilte Applikation in Java implementiert werden.
+
+\subsection{Voraussetzungen}
+
+\begin{itemize}
+	\item test
+\end{itemize}
+
+\subsection{Aufgabenstellung}
+
+
+\clearpage

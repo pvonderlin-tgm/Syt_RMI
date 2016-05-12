@@ -50,7 +50,7 @@ public class Client {
 			Command calcEuler = new CalculationCommand(new EulerCalc(), callback);
 			
 			// Execute the command
-			uRemoteObject.doSomething(calcEuler);
+			uRemoteObject.execute(calcEuler);
 			
 			// Halt programm until enter key is pressed
 			while(System.in.read() != '\n');
