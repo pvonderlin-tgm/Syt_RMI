@@ -2,7 +2,7 @@ package server.commands;
 
 import java.io.Serializable;
 import calculation.Calculation;
-import calculation.PICalc;
+import calculation.EulerCalc;
 
 public class CalculationCommand implements Command, Serializable {
 
@@ -12,7 +12,7 @@ public class CalculationCommand implements Command, Serializable {
 	@Override
 	public void execute() {
 		System.out.println("CalculationCommand called!");
-		calc = new PICalc();
+		calc = new EulerCalc();
 		calc.calculate();
 		calc.getResult();
 	}

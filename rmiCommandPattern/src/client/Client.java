@@ -21,17 +21,20 @@ public class Client {
 
 			DoSomethingService uRemoteObject = (DoSomethingService) registry.lookup("Service");
 			System.out.println("Service found");
-
+			
+			/*
 			Command rc = new RegisterCommand();
 			Command lc = new LoginCommand();
-			
+			*/
 			
 			// New Command for calculation of something
 			Command calc = new CalculationCommand();
 			uRemoteObject.doSomething(calc);
 			
+			/*
 			uRemoteObject.doSomething(rc);
 			uRemoteObject.doSomething(lc);
+			*/
 
 		} catch (RemoteException re) {
 			System.err.println("Service not found?" + " Check your RMI-Registry!");
